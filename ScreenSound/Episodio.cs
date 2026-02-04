@@ -11,7 +11,7 @@ class Episodio
     public int Ordem { get;  }
     public string Titulo { get;  }
     public int DuracaoEp { get;  }
-    public string Resumo => $"Episodio {Ordem} - {Titulo} com {string.Join(", ", convidados)} tem a duração de {DuracaoEp} horas.  ";
+    public string Resumo => $"Episódio {Ordem} - {Titulo} - Convidados: {string.Join(", ", convidados)} - Duração: {DuracaoEp} horas.  ";
 
     public void AdicionarCondidados(string convidado)
     {

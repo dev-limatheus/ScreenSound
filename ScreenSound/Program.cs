@@ -15,16 +15,20 @@
 // };
 
 
-Podcast podtech = new Podcast("Matheus", "PodTech");
 
 Episodio epsisodio1 = new("O inicio", 1, 2);
-
 epsisodio1.AdicionarCondidados("Rage");
 epsisodio1.AdicionarCondidados("Lima");
 
+Episodio epsisodio2 = new("Começando novamente", 2, 4);
+epsisodio2.AdicionarCondidados("Mat");
+epsisodio2.AdicionarCondidados("Lima");
+
+Podcast podtech = new Podcast("Matheus", "PodTech");
 podtech.AdicionarEpisodio(epsisodio1);
-Console.WriteLine(epsisodio1.Resumo);
+podtech.AdicionarEpisodio(epsisodio2);
 podtech.ExibirDetalhes();
+
 
 
 // albumQueen.AdicionarMusica(musica1);
